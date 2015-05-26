@@ -45,7 +45,7 @@ if [ $REDIRECT_STDERR ]; then
 fi
 
 if [ $OS == 'Mac' ]; then
-  ATOM_APP_NAME=Atom.app
+  ATOM_APP_NAME="Atom.app"
 
   if [ -z "${ATOM_PATH}" ]; then
     # If ATOM_PATH isnt set, check /Applications and then ~/Applications for Atom.app

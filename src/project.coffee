@@ -377,7 +377,7 @@ class Project extends Model
   # Returns a promise that resolves to the {TextBuffer}.
   buildBuffer: (absoluteFilePath) ->
     if fs.getSizeSync(absoluteFilePath) >= 2 * 1048576 # 2MB
-      error = new Error("Atom can only handle files < 2MB for now.")
+      error = new Error("Api Workbench can only handle files < 2MB for now.")
       error.code = 'EFILETOOLARGE'
       throw error
 
